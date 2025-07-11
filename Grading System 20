@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char name[100];
+    int m1,m2,m3,m4,m5,Total;
+    float Avg;
+    scanf("%s",name);
+    printf("Name of the Student:%s\n",name);
+    scanf("%d\n",&m1);
+    scanf("%d\n",&m2);
+    scanf("%d\n",&m3);
+    scanf("%d\n",&m4);
+    scanf("%d\n",&m5);
+    Total=m1+m2+m3+m4+m5;
+    Avg=Total/5.0;
+    printf("Total Mark:%d\n",Total);
+    printf("Average Mark:%.1f\n",Avg);
+    if (Avg==100)
+    {
+        printf("Grade Mark:s");
+    }
+    else if(Avg>=90)
+    {
+        printf("Grade Mark:A");
+    }
+    else if(Avg>=80)
+    {
+        printf("Grade Mark:B");
+    }
+    else if(Avg>=70)
+    {
+        printf("Grade Mark:C");
+    }
+    else if(Avg>=60)
+    {
+        printf("Grade Mark:D");
+    }
+    else if(Avg>=50)
+    {
+        printf("Grade Mark:E");
+    }    
+    else
+        printf("Grade Mark:Fail");
+    return 0;
+}
